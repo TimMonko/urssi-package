@@ -11,5 +11,3 @@ wheels/
 
 # uv
 uv.lock
-
-site/
