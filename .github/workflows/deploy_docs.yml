@@ -21,8 +21,10 @@ jobs:
 
       - name: Test that docs build without error
         if: github.event_name == 'pull_request'
-        run: uv run mkdocs build --strict
+        run: uv pip install "[docs]" |
+          mkdocs build --strict
+
 
       - name: Deploy docs to GitHub Pages
         if: github.event_name == 'push'
-        run: uv run mkdocs gh-deploy --strict --force
+        run: uvx mkdocs gh-deploy --strict --force
