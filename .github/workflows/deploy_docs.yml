@@ -21,7 +21,9 @@ jobs:
 
       - name: Test that docs build without error
         if: github.event_name == 'pull_request'
-        run: uv pip install ".[docs]" |
+        run: |
+          uv venv 
+          uv pip install ".[docs]"
           mkdocs build --strict
 
 
