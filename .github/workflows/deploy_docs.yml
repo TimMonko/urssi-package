@@ -21,7 +21,7 @@ jobs:
 
       - name: Test that docs build without error
         if: github.event_name == 'pull_request'
-        run: uv run --extra docs mkdocs build --strict --force
+        run: uv run --extra docs mkdocs build --strict
 
 
       - name: Deploy docs to GitHub Pages
