@@ -1,1 +1,13 @@
-site_name: My Docs
+site_name: URSSI Package Documentation
+site_url: https://slahrichi.github.io/urssi-package/
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.expandable
