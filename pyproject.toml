@@ -23,6 +23,9 @@ examples = [
     "matplotlib",
     "scikit-image[data]",
 ]
+docs = [
+    "mkdocs-material",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/timmonko/urssi-package"
