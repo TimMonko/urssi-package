@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: URSSI Package Documentation
+sit_url: https://knicely.github.io/urssi-package
+theme: 
+  name: material
